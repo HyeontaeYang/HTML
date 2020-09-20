@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        thead{
+            background-color: blue;
+        }
+		table, th, td {
+			border:1px solid #ccc;
+		}		
+		th {
+			padding:15px;   /* 셀 테두리와 내용 사이의 간격(패딩) */
+		}
+		tr > td:nth-child(odd) { 
+			width:120px;  /* 홀수번째 열의 너비 : 120px */
+		}
+		tr > td:nth-child(even) { 
+            width:300px;  /* 짝수번째 열의 너비 : 120px */  
+    </style>
+</head>
+<body>
+    <p id="good"> 다음표는 우리집 고양이를 설명하는 것이다
+        <table aria-describedby="good">
+            <caption>
+                <strong>우리집 고양이 특징<strong>
+                <p>두마리의 HELL CAT</p>
+            </caption>
+            <colgroup>
+                <col span="2" style="background-color: green;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>이름</th>
+                        <th colspan="2">성격</th>
+                        <th colspan="2">특징</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>아티</td>
+                        <td colspan="2"></td>
+                        <td colspan="2"></td>
+                        <th></th>
+                    
+                    </tr>
+                    <tr>
+                        <td>라온</td>
+                        <td colspan="2"></td>
+                        <td colspan="2"></td>
+                        <th></th>
+                    </tr>
+                </tbody>
+            </caption>
+        </table>
+    </p>
+    <br>
+    <p>
+        <figure>
+            <figcaption>
+                우리집 두 고양이의 특징<br>
+                HELL CAT
+            </figcaption>
+            <table>
+                    <tr>
+                        <th>이름</th>
+                        <th colspan="2">성격</th>
+                        <th colspan="2">특징</th>
+                        
+                    </tr>
+                    <tr>
+                        <td>아티</td>
+                        <td colspan="2"></td>
+                        <td colspan="2"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td>라온</td>
+                        <td colspan="2"></td>
+                        <td colspan="2"></td>
+                    </tr>
+            </table>
+            <figcaption>
+                우리집 두 고양이의 특징<br>
+                HELL CAT
+            </figcaption>
+         </figure>
+    </p>
+
+
+</body>
+</html>
