@@ -1,9 +1,9 @@
-<!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title></title>
-    <style>
+    <!--<style>
       ul {
         list-style:none;
       }
@@ -11,6 +11,35 @@
         margin:20px;
       }
     </style>
+  -->
+  <style>
+    .container {
+      width:600px;
+      margin:0 auto;
+    }
+    ul {
+      list-style-type: none;
+    }
+    label.title {
+      font-weight: bold;
+      width: 80px;
+      float: left;
+    }
+    div.centered {
+      text-align: center;
+    }
+    fieldset {
+      margin: 15px 19px;
+    }
+    fieldset legend {
+      font-weight: bold;
+      font-size: 18px;
+      color: purple;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+  </style>
   </head>
   <body>
 <!--
@@ -61,14 +90,16 @@
     </ul>
   </form>
 -->
+
+<!--
 <form>
   <ul>
     <li><label>텍스트<input type="text" name="네임" size="5" value="텍스트" maxlength="4"></label></li>
     <li><label>비밀번호<input type="password" name="비밀번호" size="5" maxlength="4"></label></li>
-    <li><label>검색<input type="search"> <input type="submit" value="검색"></label></li>
+    <li><label>검색<input type="search" autofocus required> <input type="submit" value="검색"></label></li>
     <li><label>Url<input type="url" value="http://"></label></li>
-    <li><label>mail<input type="email" value="@포함해주세요"></label></li>
-    <li><label>전화<input type="tel" value="전화번호입력"></label></li>
+    <li><label>mail<input type="email" placeholder="하이픈없이 입력"></label></li>
+    <li><label>전화<input type="tel" value="전화번호입력" readonly></label></li>
     <li><label>숫자입력<input type="number" value="0" min="0" max="5" step="2"></label></li>
     <li><label>슬라이드숫자입력<input type="range" value="1" min="1" max="3"></label></li>
     <li><label>라디오박스<input type="radio" name="subject" value="서버넘어간다">서버</label>
@@ -86,6 +117,63 @@
     <input type="button" value="새 탭 열기" onclick="window.open()">
 
   </ul>
+-->
+<div class="container">
+<h1>상품 주문서</h1>
+  <form>
+      <fieldset>
+        <legend>개인정보</legend>
+          <ul>
+            <li>
+              <label for="uname" class="title">이름</label>
+              <input type="text" id="uname" placeholder="여백없이 입력">
+            </li>
+            <li>
+              <label for="tell" class="title">연락처</label>
+              <input type="tel" id="tell" placeholder="연락가능한 번호">
+            </li>
+          </ul>
+      </fieldset>
+      <fieldset>
+        <legend>배송지 정보</legend>
+          <ul>
+            <li>
+              <label for="addr" class="title">주소</label>
+              <input type="text" size="40" id="addr" required>
+            </li>
+            <li>
+              <label for="tel2" class="title">전화번호</label>
+              <input type="tel" id="tel2" required>
+            </li>
+            <li>
+              <label for="commit" class="title">메 모</label>
+              <textarea cols="50" rows="3" id="commit"></textarea>
+            </li>
+          </ul>
+      </fieldset>
+      <fieldset>
+        <legend>주문 정보</legend>
+          <ul>
+            <li>
+              <label><input type="checkbox">과테말라 안티구아 (100g)</label>
+              <label><input type="number" value="0" min="0" max="5">개</label>
+            </li>
+            <li>
+              <label><input type="checkbox">인도네시아 만델링 (100g)</label>
+              <label><input type="number" value="0" min="0" max="5">개</label>
+            </li>
+            <li>
+              <label><input type="checkbox">탐라는도다(블렌딩) (100g)</label>
+              <label><input type="number" value="0" min="0" max="5">개</label>
+            </li>
+          </ul>
+      </fieldset>
+      <input type="summit" value="주문하기">
+      <input type="reset" value="다시 작성">
+    </form>
+</div>
+
+
 
 
 
