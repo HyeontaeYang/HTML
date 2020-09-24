@@ -12,37 +12,89 @@
       }
     </style>
   -->
-  <style>
-    .container {
-      width:600px;
-      margin:0 auto;
-    }
-    ul {
-      list-style-type: none;
-    }
-    label.title {
-      font-weight: bold;
-      width: 80px;
-      float: left;
-    }
-    div.centered {
-      text-align: center;
-    }
-    fieldset {
-      margin: 15px 19px;
-    }
-    fieldset legend {
-      font-weight: bold;
-      font-size: 18px;
-      color: purple;
-    }
-    ul li {
-      margin-bottom: 10px;
-    }
-  </style>
+
+
+
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
+.container {
+  width:600px;
+  margin:0 auto;
+}
+ul {
+  list-style-type: none;
+}
+label.title {
+  font-weight: bold;
+  width: 80px;
+  float: left;
+}
+div.centered {
+  text-align: center;
+}
+fieldset {
+  margin: 15px 19px;
+}
+fieldset legend {
+  font-weight: bold;
+  font-size: 18px;
+  color: purple;
+}
+ul li {
+  margin-bottom: 10px;
+}
+body{
+  font-family: 'Song Myung', serif;
+
+}
+h4 {
+  font-weight: normal;
+}
+h1{
+  font-style: italic; text-shadow: 5px 5px 3px #000; letter-spacing: 0.2em;
+  text-decoration: none;
+}
+
+</style>
   </head>
   <body>
-<!--
+    <h1>프런트엔드 개발자 지원서</h1>
+    HTML, CSS, Javascript에 대한 기술력 이해와 경험이 있는 분을 찾습니다.
+
+    <form>
+      <h4>개인정보</h4>
+      <ul>
+        <li>
+          <label for="name">이름</label>
+          <input type="text" id="name" autofocus placeholder="공백없이 입력하세요">
+        </li>
+        <li>
+          <label for="tel">연락처<label>
+          <input type="tel" id="tel">
+        </li>
+      </ul>
+      <h4>지원분야</h4>
+        <ul>
+          <li>
+            <label><input type="radio" name="field" value="an">웹퍼블리싱</label>
+          </li>
+          <li>
+            <label><input type="radio" name="field" value="pd">웹 어플리케이션 개발</label>
+          </li>
+          <li>
+            <label><input type="radio" name="field" value="eng">개발 환경 개선</label>
+          </li>
+        </ul>
+      <h4>지원동기</h4>
+        <label><textarea name="지원동기" rows="5" cols="60" placeholder="본사 지원 동기를 간략히 써 주세요."></textarea></label>
+        <div>
+        <button type="submit">전송하기</button>
+        <input type="reset" value="다시 쓰기">
+        </div>
+      </form>
+
+    <!--
     <form>
       <fieldset>
         <legend>로그인 정보</legend>
@@ -72,7 +124,6 @@
         <input type="submit" value="로그인">
     </form>
 -->
-
 <!-- 라벨 이용 방법 (라디오 타입에서 텍스트를 눌러도 선택이 됨 )
   <form>
     <h3>수강분야 (다수선택가능)<h3>
@@ -196,42 +247,5 @@
   </ul>
 </form>
 -->
-<h1>프런트엔드 개발자 지원서</h1>
-HTML, CSS, Javascript에 대한 기술력 이해와 경험이 있는 분을 찾습니다.
-
-
-<form>
-  <h4>개인정보</h4>
-  <ul>
-    <li>
-      <label for="name">이름</label>
-      <input type="text" id="name" autofocus placeholder="공백없이 입력하세요">
-    </li>
-    <li>
-      <label for="tel">연락처<label>
-      <input type="tel" id="tel">
-    </li>
-  </ul>
-  <h4>지원분야</h4>
-    <ul>
-      <li>
-        <label><input type="radio" name="field" value="an">웹퍼블리싱</label>
-      </li>
-      <li>
-        <label><input type="radio" name="field" value="pd">웹 어플리케이션 개발</label>
-      </li>
-      <li>
-        <label><input type="radio" name="field" value="eng">개발 환경 개선</label>
-      </li>
-    </ul>
-  <h4>지원동기</h4>
-    <label><textarea name="지원동기" rows="5" cols="60" placeholder="본사 지원 동기를 간략히 써 주세요."></textarea></label>
-    <div>
-    <button type="submit">전송하기</button>
-    <input type="reset" value="다시 쓰기">
-    676</div>
-  </form>
-
-
   </body>
 </html>
